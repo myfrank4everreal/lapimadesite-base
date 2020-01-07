@@ -13,7 +13,7 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 import os
 
 import django_heroku
-import dj_database_url
+
 from decouple import config 
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -82,13 +82,17 @@ WSGI_APPLICATION = 'affiliate.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres',
+        'NAME': 'store',
         'USER':'postgres',
         'PASSWORD':'1234',
         'HOST':'localhost',
     }
 }
 
+# connecting to the heroku postgres
+import dj_database_url
+db_from_env = dj_database_url.config()
+DATABASE['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.0/ref/settings/#auth-password-validators
