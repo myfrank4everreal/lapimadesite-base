@@ -5,6 +5,8 @@ class Products(models.Model):
     name = models.CharField(max_length=40)
     desc = models.CharField(max_length=300)
     price = models.FloatField(default=1)
+    imagelink = models.CharField(max_length=3000)
+    productlink = models.CharField(max_length=300)
 
 
     def __str__(self):
