@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <title>Modern Business - Start Bootstrap Template</title>
+  <title>lapimade.tech</title>
 
   <!-- Bootstrap core CSS -->
   <link href="{% static 'affiliate/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
@@ -39,39 +39,26 @@
           <li class="nav-item">
             <a class="nav-link" href="contact.html">Contact</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Portfolio
-            </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-              <a class="dropdown-item" href="portfolio-1-col.html">1 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-2-col.html">2 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-3-col.html">3 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-4-col.html">4 Column Portfolio</a>
-              <a class="dropdown-item" href="portfolio-item.html">Single Portfolio Item</a>
-            </div>
-          </li>
+          
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Blog
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
-              <a class="dropdown-item" href="blog-home-1.html">Blog Home 1</a>
-              <a class="dropdown-item" href="blog-home-2.html">Blog Home 2</a>
               <a class="dropdown-item" href="blog-post.html">Blog Post</a>
             </div>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Other Pages
+              FAQ
             </a>
-            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+            <!-- <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
               <a class="dropdown-item" href="full-width.html">Full Width Page</a>
               <a class="dropdown-item" href="sidebar.html">Sidebar Page</a>
               <a class="dropdown-item" href="faq.html">FAQ</a>
               <a class="dropdown-item" href="404.html">404</a>
               <a class="dropdown-item" href="pricing.html">Pricing Table</a>
-            </div>
+            </div> -->
           </li>
         </ul>
       </div>
@@ -87,24 +74,24 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
-        <div class="carousel-item active" style="background-image: url('{% static 'affiliate/images/image1.png' %}')">
+        <div class="carousel-item active" style="background-image: url('{% static 'affiliate/images/img5.jpeg' %}')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>First Slide</h3>
-            <p>This is a description for the first slide.</p>
+            <h3>Welcome</h3>
+            <p>we are lapimade</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/image2.jpg' %}')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Second Slide</h3>
-            <p>This is a description for the second slide.</p>
+            <h3></h3>
+            <p>we offer the best</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/image4.jpeg' %}')">
+        <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/image6.jpeg' %}')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>Third Slide</h3>
-            <p>This is a description for the third slide.</p>
+            <h3></h3>
+            <p></p>
           </div>
         </div>
       </div>
@@ -122,35 +109,38 @@
   <!-- Page Content -->
   <div class="container">
 
-    <h1 class="my-4">Welcome to Modern Business</h1>
+    <h1 class="my-4 text-center main-header">Welcome to LapiMade Technology</h1><br><br>
 
     <!-- /.row -->
 
     <!-- Portfolio Section -->
-    <h2>Portfolio Heading</h2>
+    <h2 class="text-center">Lapimade Deals</h2><hr><br>
+  
 
     <div class="row">
       {% for product in products %}
       <div class="col-lg-4 col-sm-6 portfolio-item">
-        <div class="card h-100">
-          <a href="#"><img class="card-img-top" src="{{product.img.url}}" alt=""></a>
+        <!-- <div class="card h-100"> -->
+          <a href="{{ product.amz_link}}"><img class="card-img-top" src="{{product.img.url}}" alt=""></a>
           <div class="card-body">
-            <h4 class="card-title">
-              <a href="#">{{product.name}}</a>
+            <h4 class="card-title"><hr>
+              <a href="{{ product.amz_link}}">{{product.name}}</a>
             </h4>
-            <p class="card-text">{{product.desc}}</p>
+            <p class="card-text">{{product.shotend_desc}}</p>
+            <a href="{{ product.amz_link}}" target="blank"><button type="button"  class="btn btn-lg btn-primary btn-block">${{product.price}}</button></a>
           </div>
-        </div>
+        <!-- </div> -->
       </div>
-      {% endfor %}
-
+      {% endfor %} 
+      <hr>
     </div>  
+    <br>
     <!-- /.row -->
 
     <!-- Features Section -->
     <div class="row">
-      <div class="col-lg-6">
-        <h2>Modern Business Features</h2>
+       <div class="col-lg-4">
+        <!-- <h2>Modern Business Features</h2> 
         <p>The Modern Business template by Start Bootstrap includes:</p>
         <ul>
           <li>
@@ -161,25 +151,38 @@
           <li>Working contact form with validation</li>
           <li>Unstyled page elements for easy customization</li>
         </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-      </div>
-      <div class="col-lg-6">
-        <img class="img-fluid rounded" src="http://placehold.it/700x450" alt="">
-      </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>-->
+      </div> 
+      <div class="col-lg-8">
+        <script type="text/javascript">
+          amzn_assoc_placement = "adunit0";
+          amzn_assoc_search_bar = "true";
+          amzn_assoc_tracking_id = "lapimade-20";
+          amzn_assoc_search_bar_position = "bottom";
+          amzn_assoc_ad_mode = "search";
+          amzn_assoc_ad_type = "smart";
+          amzn_assoc_marketplace = "amazon";
+          amzn_assoc_region = "US";
+          amzn_assoc_title = "Shop Related Products";
+          amzn_assoc_default_search_phrase = "gaming laptops";
+          amzn_assoc_default_category = "All";
+          amzn_assoc_linkid = "f79520c7a2d4ab5f762855d1ec40e95d";
+          </script>
+          <script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US"></script>
     </div>
     <!-- /.row -->
 
     <hr>
 
     <!-- Call to Action Section -->
-    <div class="row mb-4">
+    <!-- <div class="row mb-4">
       <div class="col-md-8">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias, expedita, saepe, vero rerum deleniti beatae veniam harum neque nemo praesentium cum alias asperiores commodi.</p>
       </div>
       <div class="col-md-4">
         <a class="btn btn-lg btn-secondary btn-block" href="#">Call to Action</a>
       </div>
-    </div>
+    </div> -->
 
   </div>
   <!-- /.container -->
@@ -187,7 +190,7 @@
   <!-- Footer -->
   <footer class="py-5 bg-dark">
     <div class="container">
-      <p class="m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
+      <p class="m-0 text-center text-white">Copyright &copy; lapimade.tech 2019</p>
     </div>
     <!-- /.container -->
   </footer>
