@@ -1,0 +1,8 @@
+make sure to add m'
+this is the media path for heroku  
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #remember to add media to path before pushin to heroku
+before push to heroku make sure to add media 
+but to run with the local host remove media from path.
+
+this is the media path for localhost
+MEDIA_ROOT = os.path.join(BASE_DIR, '') #remember to add media to path before pushin to heroku
