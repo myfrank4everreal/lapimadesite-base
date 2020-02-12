@@ -9,12 +9,8 @@
 }
 
 
-
-
-#section{
-    background-color:rgb(57, 45, 219);
-
-    margin-top: 59px;
+#sectionone{
+    background-color: rgb(204, 161, 105);
 }
 
 .header-text {
@@ -23,13 +19,14 @@
 }
 
 #section2{
-    background-color:rgb(245, 243, 243);
+    background-color:rgb(155, 41, 41);
     margin-top: 59px;
 }
 
 #section3{
     
     margin-top: 59px;
+    background-color: crimson;
 }
 .main-header {
     text-align: center !important;
