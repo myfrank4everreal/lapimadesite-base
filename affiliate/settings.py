@@ -89,6 +89,7 @@ DATABASES = {
         'PASSWORD':'1234',
         'HOST':'localhost',
         
+   }
 }
 
 # connecting to the heroku postgres
