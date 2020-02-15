@@ -1,7 +1,14 @@
+
+
 .brand-text {
-    color: rgb(231, 180, 77) !important;
+    color: orangered !important;
 }
 
+.special-text{
+    color: orangered !important;
+    background-color: rgba(43, 55, 37, 0.41);
+    border-radius: 3em;
+}
 .h4, h4 {
     font-size: 1.2rem;
 }
@@ -22,7 +29,10 @@
     margin-top: 50px;
     margin-bottom: 60px;
 }
-
+.header-image{
+    height: 800px;
+    width: 1400px;
+}
 .image-resize {
     height: 300px;
     width: 100px;

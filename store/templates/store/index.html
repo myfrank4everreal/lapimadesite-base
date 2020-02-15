@@ -47,33 +47,42 @@
   <header>
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <a href="{% url 'about' %}"><li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">click</li></a>
+        <a href=""><li data-target="#carouselExampleIndicators" data-slide-to="1">click</li></a>
+        <a href=""><li data-target="#carouselExampleIndicators" data-slide-to="2">click</li></a>ty1--3=[-\U ]
       </ol>
       <div class="carousel-inner" role="listbox">
         <!-- Slide One - Set the background image for this slide in the line below -->
+       
         <div class="carousel-item active" style="background-image: url('{% static 'affiliate/images/img5.jpeg' %}')">
-          <div class="carousel-caption d-none d-md-block">
+          <div class="carousel-caption d-none d-md-block special-text">
             <h3>Business Pc's And Accessories</h3>
             <p>...</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/gamingdesk.png' %}')">
-          <div class="carousel-caption d-none d-md-block">
-            <h3>A Home For Gamers</h3>
-            <p>Best Gaming Pc's And Accessories</p>
-          </div>
-        </div>
+        
+           <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/gamingdesk.png' %}')">
+            <div class="carousel-caption d-none d-md-block special-text">
+              
+              <h3>A Home For Gamers</h3>
+              <p>Best Gaming Pc's And Accessories</p>
+            
+            </div>
+           </div>
+        
+
         <!-- Slide Three - Set the background image for this slide in the line below -->
-        <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/image2.jpg' %}')">
-          <div class="carousel-caption d-none d-md-block">
+        
+        <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/gigshow.jpeg' %}')">
+          <div class="carousel-caption d-none d-md-block special-text">
             <h3>Stop Searching Focus on what is important</h3>
             <p>Machine For GiGs</p>
           </div>
         </div>
       </div>
+    
+      
       <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="sr-only">Previous</span>
@@ -102,32 +111,33 @@
     <!-- featured products section-->
     
     <h2 class="text-center header-text">Get Exactly What You Need, Focus On What Is Important. </h2>
-    <h5 class="text-center"> we have done the hard part for you, what ever you get from here will 
-      parfect for what you need
+    <h5 class="text-center"> We have done the hard part for you, computers and accessories,  Hand picked by our prfessionals to suite 
+      your absolute need
     </h5><hr><br>
 
     <!-- *********************************** -->
-    <div class="row first-section">
+    <div class="row first-section text-center">
       
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <!-- <div class="card h-100"> -->
-  <i class="material-icons md-48 card-img-top" style="border-top-left-radius:20px;">gamepad</i>
+          <a href="{% url 'gamezone' %}"><i class="material-icons md-48 card-img-top" style="border-top-left-radius:20px;">gamepad</i></a>
   
           <div class="card-body">
             <h4 class="card-title card-style">
               Gamers Pc and Accessories
             </h4>
-            <p class="card-text">A hand pick of the best gaming pc's and laptops and accessories 
+            <p class="card-text">A hand pick of the best gaming desktop pc's  laptops and accessories 
             we have done the work for you.
             don't let a bad machine ruin your fun
             </p>
+            <a href="{% url 'gamezone' %}"><button type="button" class="btn btn primary">View All</button></a>
           </div>
         <!-- </div> -->
       </div>
       
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <!-- <div class="card h-100"> -->
-  <i class="material-icons md-48 card-img-top">memory</i>
+  <a href="{% url 'gigzone' %}"><i class="material-icons md-48 card-img-top">memory</i></a>
   
           <div class="card-body " id="card-style">
             <h4 class="card-title card-style">
@@ -138,22 +148,26 @@
               we have got you covered with the most efficient pc even with a low 
               budget.
             </p>
+            <a href="{% url 'gamezone' %}"><button type="button" class="btn btn primary">View All</button></a>
+
           </div>
         <!-- </div> -->
       </div>
 
       <div class="col-lg-4 col-sm-6 portfolio-item">
         <!-- <div class="card h-100"> -->
-  <i class="material-icons md-48 card-img-top" style="border-top-right-radius:20px;">laptop_mac</i>
+          <a href="{% url 'bizzone' %}"><i class="material-icons md-48 card-img-top" style="border-top-right-radius:20px;">laptop_mac</i></a>
   
           <div class="card-body">
             <h4 class="card-title card-style">
            Business Specific Laptops
             </h4>
-            <p class="card-text">
+            <p class="card-text  ">
               when it comes to choosen the right laptop for business its often 
               over whelming, we have made the selection for you focuse on what is important
             </p>
+            <a href="{% url 'gamezone' %}"><button type="button" class="btn btn primary">View All</button></a>
+
           </div>
         <!-- </div> -->
       </div>
@@ -166,57 +180,35 @@
     <!-- *(***********************************)  -->
 
     <section id="section-jumbo1">
-      <div class="row divider">
+      <div class="row container divider">
 
-        <div class="col-lg-6 ">
-         <img class="jumbo-image image-resize" src="{% static 'affiliate/images/pc1.jpg' %}" alt="">
+        <div class="col-lg-8 ">
+        <a class="special-text" href="#">
+         <img class="jumbo-image" src="{% static 'affiliate/images/pc1.jpg' %}" alt="">
         </div>
          <div class="col-lg-4">
-          <h2>Modern Business Features</h2> 
-          <p>The Modern Business template by Start Bootstrap includes:</p>
+          <h2>gaming pc</h2> 
+        </a>
+          <p>The amazin features inlude:</p>
           <ul>
             <li>
               <strong>Bootstrap v4</strong>
             </li>
-            <li>jQuery</li>
-            <li>Font Awesome</li>
-            <li>Working contact form with validation</li>
-            <li>Unstyled page elements for easy customization</li>
+            <li>Hard disk size</li>
+            <li>Ram size</li>
+            <li>proccessor spead</li>
+            <li>Model</li>
+            <li>And More...</li>
+
           </ul>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
+          <p>Lets add some details </p>
         </div> 
+      
          
     </div>
   </section>  
 
 
-  <section id="section-jumbo2">
-    <div class="row divider">
-
-      
-      <div class="col-lg-6">
-        <img class="jumbo-image" src="{% static 'affiliate/images/pc1.jpg' %}" alt="">
-      </div>
-       
-      
-      <div class="col-lg-4">
-        <h2>Modern Business Features</h2> 
-        <p>The Modern Business template by Start Bootstrap includes:</p>
-        <ul>
-          <li>
-            <strong>Bootstrap v4</strong>
-          </li>
-          <li>jQuery</li>
-          <li>Font Awesome</li>
-          <li>Working contact form with validation</li>
-          <li>Unstyled page elements for easy customization</li>
-        </ul>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
-      </div> 
-
-    </div>
-</section>  
-  
  
   
 
@@ -304,12 +296,12 @@
   <!-- /.container -->
 
   <!-- Footer -->
-  <footer class="py-5 bg-dark">
+  <!-- <footer class="py-5 bg-dark">
     <div class="container">
       <p class="m-0 text-center text-white">Copyright &copy; lapimade.tech 2019</p>
     </div>
-    <!-- /.container -->
-  </footer>
+    
+  </footer> -->
 
   <!-- Bootstrap core JavaScript -->
  
