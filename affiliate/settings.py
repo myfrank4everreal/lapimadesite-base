@@ -83,11 +83,11 @@ WSGI_APPLICATION = 'affiliate.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'store',
-        'USER':'postgres',
-        'PASSWORD':'1234',
-        'HOST':'localhost',
+        'ENGINE': 'django.db.backends.postgresql-vertical-84509',
+        'NAME': 'd2kce9fhf41etb',
+        'USER':'kvlmqafvefsjor',
+        'PASSWORD':'c4a735977a61c9e76b6969ecc404aaec2706d1d7bf18f306ff45805b12fc381d',
+        'HOST':'ec2-174-129-33-156.compute-1.amazonaws.com',
     }
 }
 
