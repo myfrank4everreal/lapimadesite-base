@@ -55,22 +55,22 @@
         <!-- Slide One - Set the background image for this slide in the line below -->
         <div class="carousel-item active" style="background-image: url('{% static 'affiliate/images/img5.jpeg' %}')">
           <div class="carousel-caption d-none d-md-block">
-            <h3>...</h3>
+            <h3>Business Pc's And Accessories</h3>
             <p>...</p>
           </div>
         </div>
         <!-- Slide Two - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/gamingdesk.png' %}')">
           <div class="carousel-caption d-none d-md-block">
-            <h3></h3>
-            <p>...</p>
+            <h3>A Home For Gamers</h3>
+            <p>Best Gaming Pc's And Accessories</p>
           </div>
         </div>
         <!-- Slide Three - Set the background image for this slide in the line below -->
         <div class="carousel-item" style="background-image: url('{% static 'affiliate/images/image2.jpg' %}')">
           <div class="carousel-caption d-none d-md-block">
-            <h3></h3>
-            <p></p>
+            <h3>Stop Searching Focus on what is important</h3>
+            <p>Machine For GiGs</p>
           </div>
         </div>
       </div>
@@ -91,8 +91,8 @@
   <!--  ((((((((((((((((((((((0))))))))))))))))))))))))))-->
   <!-- ((((((((((((((((the jubotrum)))))))))))))))) -->
 
-  <section id="sectionone">
-  <div class="container">
+  <section id="sectionone divider">
+  <div class="container divider ">
 
     
 
@@ -166,10 +166,10 @@
     <!-- *(***********************************)  -->
 
     <section id="section-jumbo1">
-      <div class="row">
+      <div class="row divider">
 
-        <div class="col-lg-8">
-         <img class="jumbo-image" src="{% static 'affiliate/images/pc1.jpg' %}" alt="">
+        <div class="col-lg-6 ">
+         <img class="jumbo-image image-resize" src="{% static 'affiliate/images/pc1.jpg' %}" alt="">
         </div>
          <div class="col-lg-4">
           <h2>Modern Business Features</h2> 
@@ -191,10 +191,15 @@
 
 
   <section id="section-jumbo2">
-    <div class="row">
+    <div class="row divider">
 
       
-       <div class="col-lg-4">
+      <div class="col-lg-6">
+        <img class="jumbo-image" src="{% static 'affiliate/images/pc1.jpg' %}" alt="">
+      </div>
+       
+      
+      <div class="col-lg-4">
         <h2>Modern Business Features</h2> 
         <p>The Modern Business template by Start Bootstrap includes:</p>
         <ul>
@@ -209,38 +214,41 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, omnis doloremque non cum id reprehenderit, quisquam totam aspernatur tempora minima unde aliquid ea culpa sunt. Reiciendis quia dolorum ducimus unde.</p>
       </div> 
 
-      <div class="col-lg-8">
-        <img class="jumbo-image" src="{% static 'affiliate/images/pc1.jpg' %}" alt="">
-       </div>
-       
-  </div>
+    </div>
 </section>  
   
  
   
 
   <section id="section2">
-   <!-- featured products section -->
-   <h2 class="featured-products" >Featured Products</h2>
-    <div class="row">
-      {% for product in products %}
-      <div class="col-lg-4 col-sm-6 portfolio-item">
-        <!-- <div class="card h-100"> -->
-          <a href="{{ product.amz_link}}"><img class="card-img-top" src="{{product.img.url}}" alt=""></a>
-          <div class="card-body">
-            <h4 class="card-title"><hr>
-              <a href="{{ product.amz_link}}">{{product.name}}</a>
-            </h4>
-            <p class="card-text">{{product.shotend_desc}}</p>
-            <a href="{{ product.amz_link}}" target="blank"><button type="button"  class="btn btn-lg btn-color btn-block">${{product.price}}</button></a>
+    <div class="container">
+      <!-- featured products section -->
+      <ol class="breadcrumb ">
+        <li class="breadcrumb-item">
+          <a href="#"></a> 
+        </li>
+      <a href="#"> <li class="breadcrumb-item active"><h2 class="featured-products" >Featured Products</h2></li></a>
+      </ol>
+        <div class="row">
+          {% for product in products %}
+          <div class="col-lg-4 col-sm-6 portfolio-item">
+            <!-- <div class="card h-100"> -->
+              <a href="{{ product.amz_link}}"><img class="card-img-top" src="{{product.img.url}}" alt=""></a>
+              <div class="card-body">
+                <h4 class="card-title"><hr>
+                  <a href="{{ product.amz_link}}">{{product.name}}</a>
+                </h4>
+                <p class="card-text">{{product.shotend_desc}}</p>
+                <a href="{{ product.amz_link}}" target="blank"><button type="button"  class="btn btn-lg btn-color btn-block">${{product.price}}</button></a>
+              </div>
+            <!-- </div> -->
           </div>
-        <!-- </div> -->
-      </div>
-      {% endfor %} 
-      <hr>
-    </div>  
-    <br>
-    <hr>
+          {% endfor %} 
+          <hr>
+        </div>  
+        <br>
+        <hr>
+    </div>
   </section>
     <!-- /.row -->
 

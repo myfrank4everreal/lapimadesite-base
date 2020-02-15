@@ -1,0 +1,103 @@
+.brand-text {
+    color: rgb(231, 180, 77) !important;
+}
+
+.h4, h4 {
+    font-size: 1.2rem;
+}
+
+
+#sectionone {
+    background-color: #ebe1e1;
+    
+}
+
+.header-text {
+    margin-top: 30px;
+
+}
+
+/* utility styles */
+.divider{
+    margin-top: 50px;
+    margin-bottom: 60px;
+}
+
+.image-resize {
+    height: 300px;
+    width: 100px;
+}
+
+.material-icons {
+    color: orangered;
+    background-color: rgba(42, 49, 56, 0.849);
+    
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 60px !important;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+    padding-left: 100px !important;
+  }
+
+
+
+/* ****************************************** */
+#section2{
+    background-color: ;
+    margin-top: 59px;
+}
+
+#section3{
+    
+    margin-top: 59px;
+    background-color: ;
+}
+.main-header {
+    text-align: center !important;
+    
+    
+}
+
+.jumbo-image{
+    width: 600px;
+    margin-left: 30px;
+    margin-top: 0px;
+    padding-left: 20px;
+    margin-right: 30px;
+}
+
+#section4 {
+
+}
+.breadcrumb {
+    background-color: #ffffff !important;
+}
+
+.h1, h1 {
+    font-size: 2.5rem ;
+}
+
+
+#card-style {
+    border-top-left-radius: ;
+}
+ 
+
+
+.featured-products {
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+.btn-color{
+    background-color: rgb(49, 46, 46) !important;
+    color:white;
+}
