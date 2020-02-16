@@ -33,6 +33,10 @@
     height: 800px;
     width: 1400px;
 }
+.small-img {
+    height: 130px !important;
+    width: 150px !important;
+}
 .image-resize {
     height: 300px;
     width: 100px;
