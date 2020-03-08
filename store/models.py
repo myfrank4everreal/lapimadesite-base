@@ -1,8 +1,8 @@
 from django.db import models
 
 class Products(models.Model):
-    img_url = models.CharField(max_length=2000,  null=True, blank=True)
-
+    img_url = models.TextField(max_length=3000, null=True, blank=True)
+    
     img = models.FileField(null=True, blank=True)
     name = models.CharField(max_length=40)
     desc = models.CharField(max_length=300)
@@ -19,7 +19,8 @@ class Products(models.Model):
    
 
 class BusinesZone(models.Model):
-    img_url = models.CharField(max_length=2000,  null=True, blank=True)
+    img_url = models.TextField(max_length=3000, null=True, blank=True)
+
     img = models.FileField(null=True, blank=True)
     name = models.CharField(max_length=300)
     desc = models.TextField(max_length=3000, null=True, blank=True)
@@ -35,7 +36,7 @@ class BusinesZone(models.Model):
 
 
 class GameZone(models.Model):
-    img_url = models.CharField(max_length=2000,  null=True, blank=True)
+    img_url = models.TextField(max_length=3000, null=True, blank=True)
 
     img = models.FileField(null=True, blank=True)
     name = models.CharField(max_length=400)
@@ -53,7 +54,7 @@ class GameZone(models.Model):
     
 
 class GigZone(models.Model):
-    img_url = models.CharField(max_length=2000,  null=True, blank=True)
+    img_url = models.TextField(max_length=3000, null=True, blank=True)
 
     img = models.FileField(null=True, blank=True)
     name = models.CharField(max_length=400)
