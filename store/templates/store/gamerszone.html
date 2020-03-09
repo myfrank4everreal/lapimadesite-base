@@ -67,7 +67,7 @@
       <div class="col-lg-4 mb-4">
         <div class="card h-100 text-center">
           <img class="card-img-top" src="" alt="">
-          <a href="{{ lapi.amz_link}}"><img class="card-img-top" src="{{lapi.img_url}}" alt=""></a>
+          <a href="{{ lapi.amz_link}}"><img class="card-img-top" src={{lapi.img_url}} alt=""></a>
 
           <div class="card-body">
             <h4 class="card-title">{{lapi.name}}</h4>
@@ -75,7 +75,7 @@
             <p class="card-text">{{lapi.shotend_desc}}</p>
           </div>
           <div class="card-footer">
-            <a href="#">Learn More</a>
+            <a href="{{ lapi.amz_link }}">Learn More</a>
           </div>
         </div>
       </div>
