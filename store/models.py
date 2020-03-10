@@ -8,7 +8,9 @@ class Products(models.Model):
     desc = models.CharField(max_length=300)
     price = models.FloatField(default=1)
     amz_link = models.CharField(max_length=300, null=True, blank=True)
-    
+    accessories = models.BooleanField(default=False)
+    desktop = models.BooleanField(default=False)
+    laptop = models.BooleanField(default=False)
     
 
     def __str__(self):
