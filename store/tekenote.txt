@@ -11,3 +11,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '') #remember to add media to path before pu
 i added this files to gitignore: __pycache__/
 *.sqlite3
 env/
+
+just wining
