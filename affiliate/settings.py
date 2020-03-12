@@ -141,6 +141,8 @@ STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'affiliate/static'),
 
 MEDIA_URL = '/media/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #remember to add media to path before pushin to heroku
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
