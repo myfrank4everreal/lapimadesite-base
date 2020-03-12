@@ -6,3 +6,8 @@ but to run with the local host remove media from path.
 
 this is the media path for localhost
 MEDIA_ROOT = os.path.join(BASE_DIR, '') #remember to add media to path before pushin to heroku
+
+
+i added this files to gitignore: __pycache__/
+*.sqlite3
+env/
