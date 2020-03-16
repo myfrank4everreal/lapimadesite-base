@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages'
 ]
 
 MIDDLEWARE = [
@@ -135,16 +136,29 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+
 STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'affiliate/static'),
 
 ]
 
 MEDIA_URL = '/media/'
 
-STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media') #remember to add media to path before pushin to heroku
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 django_heroku.settings(locals())
 
+AWS_ACCESS_KEY_ID = 'AKIA235CREQFXKSXC7VR'
+
+AWS_SECRET_ACCESS_KEY_ID = 'sgZLev4agDCOLE/ajQ7o68LS/KMPsK2z8D9u63lq'
+AWS_STORAGE_BUCKET_NAME = 'lapimade'
+
+
+
+AWS_S3_FILE_OVERWRITE = False
+AWS_DEFAULT_ACL = None
+
+DEFAULT_FILE_STORAGE= 'storage_backends.s3boto3.S3Boto3.Storage'
