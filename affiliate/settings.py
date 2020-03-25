@@ -153,7 +153,7 @@ django_heroku.settings(locals())
 
 AWS_ACCESS_KEY_ID = 'AKIA235CREQFXKSXC7VR'
 
-AWS_SECRET_ACCESS_KEY_ID = 'sgZLev4agDCOLE/ajQ7o68LS/KMPsK2z8D9u63lq'
+AWS_SECRET_ACCESS_KEY = 'sgZLev4agDCOLE/ajQ7o68LS/KMPsK2z8D9u63lq'
 AWS_STORAGE_BUCKET_NAME = 'lapimade'
 
 
@@ -161,4 +161,4 @@ AWS_STORAGE_BUCKET_NAME = 'lapimade'
 AWS_S3_FILE_OVERWRITE = False
 AWS_DEFAULT_ACL = None
 
-DEFAULT_FILE_STORAGE= 'storage_backends.s3boto3.S3Boto3.Storage'
+DEFAULT_FILE_STORAGE= 'storages.backends.s3boto3.S3Boto3Storage'
